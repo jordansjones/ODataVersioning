@@ -1,4 +1,4 @@
-ODataVersioning
+ODataVersioning - Proof of Concept
 ===============
 
 Naive approach to handling OData Endpoint versioning using an HTTP header
