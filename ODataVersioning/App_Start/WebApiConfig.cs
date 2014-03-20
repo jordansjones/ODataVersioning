@@ -18,7 +18,7 @@ namespace ODataVersioning
 
             odataBuilder.ForEndpoint("Products")
                         .OnVersion(1).MapEntitySet<SimpleProduct>().ToController<SimpleProductsController>()
-                        .OnVersionRange(2, 8).MapEntitySet<CategorizedProduct>().ToController<CategorizedProductsController>()
+                        .OnVersionRange(2, 5).MapEntitySet<CategorizedProduct>().ToController<CategorizedProductsController>()
                         .Build();
 
             config.Routes.MapVersionedODataRoute("odata", "svc", odataBuilder.GetEdmModel());
