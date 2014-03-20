@@ -37,6 +37,6 @@ Will return a collection of `CategorizedProduct` entities that have the followin
 }
 ```
 
-This implementation has the added benefit that if a `x-api-version` value is outside the range of supported versions, it will return a `406 Not Acceptable` error. Additionally if the `x-api-version` request header is not present, the implementation will assume the use meant the current version.
+This implementation has the added benefit that if a `x-api-version` value is outside the range of supported versions, it will return a `406 Not Acceptable` error. Additionally if the `x-api-version` request header is not present, the implementation will assume the current version is desired.
 
 In this example, the valid version range is 1 through 5.
